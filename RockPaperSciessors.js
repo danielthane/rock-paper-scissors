@@ -1,11 +1,11 @@
-const options = ["Rock", "Paper", "Scissors"];
+const options = ["rock", "paper", "scissors"];
 
 // Function to get input from the user
 function getUserGuess(){
     let userGuess;
     // Loop to ensure the input is valid
     while (!options.includes(userGuess)){
-        userGuess = prompt("Rock, Paper or Scissors - Don't Forget the capital!");
+        userGuess = prompt("Rock, Paper or Scissors - Don't Forget the capital!").toLowerCase();
         console.log(userGuess);
     }
     return userGuess;

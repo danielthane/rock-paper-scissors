@@ -26,6 +26,7 @@ cards.forEach(card => card.addEventListener('click', (e) => {
             }
             else{
                 resultText.textContent = "You have won the game!!!"
+                resultText.style.color = "green"
             }
             
         }
@@ -37,6 +38,7 @@ cards.forEach(card => card.addEventListener('click', (e) => {
             }
             else{
                 resultText.textContent = "The computer wins!!!"
+                resultText.style.color = "red"
             }
         }
         else{

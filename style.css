@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=IBM+Plex+Mono:ital,wght@0,400;1,700&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    background-color: antiquewhite;
+}
+
+.btn-container{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.game-btn{
+    background-color: dodgerblue;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 1rem 1rem;
+    transition: 0.7s;
+}
+
+.game-btn:hover{
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+    transform: scale(1.05) rotate(3deg);
+}
+
+.game-btn img{
+    border-radius: 5px;
+}
+
+.game-btn h3{
+    color: aliceblue;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 36px;
+    margin-top: 1rem;
+}
+
+h1{
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 6rem;
+    margin-bottom: 100px;
+    margin-top: 40px;
+    text-align: center;
+}

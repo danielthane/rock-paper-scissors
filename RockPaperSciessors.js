@@ -54,26 +54,18 @@ function checkWinner(userGuess, computerGuess){
     }
 }
 
-function game(){
-    let userWins = 0;
-    let computerWins = 0;
-    while (userWins + computerWins < 6){
-        userGuess = getUserGuess();
-        computerGuess = getComputerChoice();
-        result = checkWinner(userGuess, computerGuess);
-        if (result === "Player"){
-            userWins++;
-            console.log(`You win! ${userGuess} beats ${computerGuess}!`);
-        }
-        else if (result === "Comp"){
-            computerWins++;
-            console.log(`You lose! ${computerGuess} beats ${userGuess}!`);
-        }
-        else{
-            console.log(`That's a draw! Two ${userGuess}'s`);
-        }
-        console.log(`Player Score: ${userWins}`);
-        console.log(`Computer Score: ${computerWins}`);
+function playRound(){
+    userGuess = getUserGuess();
+    computerGuess = getComputerChoice();
+    result = checkWinner(userGuess, computerGuess);
+    if (result === "Player"){
+        console.log(`You win! ${userGuess} beats ${computerGuess}!`);
+    }
+    else if (result === "Comp"){
+        console.log(`You lose! ${computerGuess} beats ${userGuess}!`);
+    }
+    else{
+        console.log(`That's a draw! Two ${userGuess}'s`);
     }
 }
 
